@@ -1,0 +1,39 @@
+{
+  "home": {
+    "fullname": "Luka Vacheishvili",
+    "cv": "CV",
+    "info": "Personal Information",
+    "date": "Date of Birth",
+    "address": "Address: 28a Kiketi Str. | Tbilisi, Georgia",
+    "cell": "Cell",
+    "tel": "Tel",
+    "mail": "Email",
+    "linked": "Linked In",
+    "github": "Github",
+    "education": "Education",
+    "school": "Free Waldorf School of Tbilisi",
+    "university": "Aviation University of Georgia - Department of Information Technologies and Automated Systems for Flights Management",
+    "languages": "Languages",
+    "languagesLevel": "Georgian - Native; English - good; Russian - average; German - fair."
+  },
+  "skills": {
+    "skills": "Skills",
+    "perSkills": "Personal Skills",
+    "friendly": "Friendly",
+    "solver": "Problem Solver",
+    "responsible": "Responsible",
+    "cSkills": "Computer Skills",
+    "frontend": "Frontend FrameWorks: Vue.js (good), React / React Native (average);",
+    "backend": "Back-End Development",
+    "networking": "Networking: Basic Network Knowledge, Cisco Packet Tracer, Linux, Penetration Test Course, Ethical Hacking Course (with certificate)."
+  },
+  "work": {
+    "work": "Work Experience",
+    "practice": "Practice",
+    "description": "In 2021 I had 3 months of practice from university at Scientific Technical Center Delta. I was in the IT department and learned Web Developing basics. For example: Creating C# web application with GET, POST, PUT, DELETE requests, also revised query writing in MySQL. We successfully performed CRUD operations in Database. After that, we learned Document Object Model (DOM) features from Front-End Development and manipulated DOM elements with JavaScript. Our final task was to create a Web Form with validation. In that task, we also got familiar with CSS Styling and some complicated JavaScript functions.",
+    "tBank": "Tera Bank",
+    "tSkills": "I worked for Tera Bank from October 2021 to January 2022 as a React Junior Developer.",
+    "pa": "Pension Agency",
+    "pSkills": "Since September 2021, I have been working in the Pension Agency for the position of Node.js / Vue.js Junior Developer."
+  }
+}
