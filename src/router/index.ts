@@ -56,13 +56,15 @@ function nextFactory(context: any, middleware: any, index: any) {
 router.beforeEach((to, from, next) => {
   //console.log(to);
   const locale = to.params.lang;
+  const safeLocale = locale as 'en' | 'ka';
   
-  if (!availablelanguages.includes(locale)) {
+  if (!availablelanguages.includes(safeLocale)) {
     return next(`/${defaultLocale}`);
   }
 
-  if (i18n.global.locale.value !== locale) {
-    i18n.global.locale.value = locale;
+
+  if (i18n.global.locale.value !== safeLocale) {
+    i18n.global.locale.value = safeLocale;
   }
 
   next();
