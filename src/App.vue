@@ -20,7 +20,7 @@ html {
   height: 80vh;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 5px;
   box-sizing: border-box;
 }
 

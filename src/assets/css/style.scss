@@ -20,6 +20,9 @@ html {
 .terminal-container {
   margin-top: -25px;
   width: 100%;
+  pre {
+    margin-bottom: -5px;
+  }
 
   .terminal-input {
     display: flex;
