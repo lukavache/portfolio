@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import Home from "@/components/Home.vue";
+import TerminalVue from '@/components/Terminal.vue';
+import PersonalView from '@/views/PersonalView.vue';
 import SkillsView from '../views/SkillsView.vue';
 import WorkView from "../views/WorkView.vue";
 import NotFound from '../views/NotFound.vue';
@@ -11,12 +11,13 @@ const router = createRouter({
   routes: [
     {
       path: '/:lang',
-      component: HomeView,
+      component: TerminalVue,
+      name: 'terminal',
       children: [
         {
-          path: '',
-          name: 'home',
-          component: Home,
+          path: 'info',
+          name: 'info',
+          component: PersonalView,
         },
         {
           path: 'skills',
