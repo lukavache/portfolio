@@ -55,21 +55,14 @@ function nextFactory(context: any, middleware: any, index: any) {
 }
 
 router.beforeEach((to, from, next) => {
-  // Check if the request is coming from Certbot (Let's Encrypt validation)
-  const isCertbotRequest = to.query.hasOwnProperty('acme_challenge');
-  
-  // If it's a Certbot request, allow it to proceed without redirects
-  if (isCertbotRequest) {
-    return next();
-  }
-
-  // The rest of your language-based routing logic
+  //console.log(to);
   const locale = to.params.lang;
   const safeLocale = locale as 'en' | 'ka';
-
+  
   if (!availablelanguages.includes(safeLocale)) {
     return next(`/${defaultLocale}`);
   }
+
 
   if (i18n.global.locale.value !== safeLocale) {
     i18n.global.locale.value = safeLocale;
